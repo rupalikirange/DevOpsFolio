@@ -101,7 +101,7 @@
 <!-- Hero -->
 <header id="top" class="relative overflow-hidden">
   <div class="mx-auto max-w-6xl px-6 pb-20 pt-20 md:pt-28">
-    <div class="grid gap-12 md:grid-cols-[1.4fr,1fr] md:items-center">
+    <div class="grid gap-12 md:grid-cols-[1.4fr,1fr] md:items-start">
       <div>
         <div class="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-3 py-1 text-xs font-medium text-muted">
           <span class="relative flex h-2 w-2">
@@ -110,11 +110,8 @@
           </span>
           Available for cloud & DevOps roles
         </div>
-        <h1 class="mt-6 text-5xl font-bold leading-[1.05] tracking-tight md:text-7xl">
-          Rupali <span class="gradient-text">Kirange</span>
-        </h1>
-        <p class="mt-4 max-w-xl text-lg text-muted md:text-xl">
-          Cloud Technology Lead with <span class="font-semibold text-fg">8 years</span> shipping AWS migrations, Kubernetes platforms, and CI/CD automation — now driving AI-powered DevOps with Claude Code Agents at Infosys & TCS.
+        <p class="mt-6 max-w-xl text-lg text-muted md:text-xl">
+          Cloud Technology Lead with <span class="font-semibold text-fg">8 years</span> shipping AWS migrations, Kubernetes platforms, and CI/CD automation — now driving AI-powered DevOps with Claude Code Agents at Infosys.
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
           <a href="mailto:rupalikirangedevops@gmail.com" class="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-bg hover:opacity-90 transition">✉ rupalikirangedevops@gmail.com</a>
@@ -126,18 +123,33 @@
         </div>
       </div>
 
-      <!-- Terminal -->
-      <div class="glow rounded-xl border border-border bg-terminal p-1 shadow-card">
-        <div class="flex items-center gap-2 border-b border-border/60 px-4 py-2.5">
-          <span class="h-3 w-3 rounded-full bg-destructive/70"></span>
-          <span class="h-3 w-3 rounded-full bg-yellow-400/70"></span>
-          <span class="h-3 w-3 rounded-full bg-accent/70"></span>
-          <span class="ml-2 font-mono text-xs text-muted">rupali@aws — zsh</span>
+      <!-- Profile + Terminal -->
+      <div class="space-y-6">
+        <div class="glow rounded-xl border border-border bg-terminal p-1 shadow-card">
+          <div class="flex items-center gap-2 border-b border-border/60 px-4 py-2.5">
+            <span class="h-3 w-3 rounded-full bg-destructive/70"></span>
+            <span class="h-3 w-3 rounded-full bg-yellow-400/70"></span>
+            <span class="h-3 w-3 rounded-full bg-accent/70"></span>
+            <span class="ml-2 font-mono text-xs text-muted">rupali@aws — zsh</span>
+          </div>
+          <div class="flex flex-col items-center gap-4 p-6 text-center sm:flex-row sm:text-left">
+            <img src="portfolio-profile.jpg" alt="Rupali Kirange — Cloud Technology Lead" class="h-28 w-28 rounded-full border-2 border-primary/40 object-cover shadow-glow" />
+            <div>
+              <p class="font-mono text-sm text-termfg">$ whoami</p>
+              <p class="mt-1 text-lg font-semibold text-fg">Rupali Kirange</p>
+              <p class="text-sm text-muted">Cloud Technology Lead @ Infosys Limited</p>
+              <p class="mt-2 text-xs text-muted">AWS · Kubernetes · Terraform · AI Agents</p>
+            </div>
+          </div>
         </div>
-<pre class="overflow-x-auto p-5 font-mono text-[13px] leading-relaxed text-termfg">$ whoami
-&gt; Cloud Technology Lead @ Infosys Limited
-
-$ cat stack.yaml
+        <div class="glow rounded-xl border border-border bg-terminal p-1 shadow-card">
+          <div class="flex items-center gap-2 border-b border-border/60 px-4 py-2.5">
+            <span class="h-3 w-3 rounded-full bg-destructive/70"></span>
+            <span class="h-3 w-3 rounded-full bg-yellow-400/70"></span>
+            <span class="h-3 w-3 rounded-full bg-accent/70"></span>
+            <span class="ml-2 font-mono text-xs text-muted">rupali@aws — zsh</span>
+          </div>
+<pre class="overflow-x-auto p-5 font-mono text-[13px] leading-relaxed text-termfg">$ cat stack.yaml
 ai:               [claude-code, agentic-ai, genai-devops]
 cloud:            [aws, eks, lambda, s3, ecs, fargate, codedeploy]
 iac:              [terraform, helm, ansible]
@@ -154,6 +166,7 @@ manual-effort      -90%
 ci-cd-automation   +85%
 ai-agents          80% effort saved
 </pre>
+        </div>
       </div>
     </div>
   </div>
