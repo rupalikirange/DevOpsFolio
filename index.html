@@ -65,6 +65,43 @@
   code, pre, .font-mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
   @keyframes ping { 75%,100% { transform: scale(2); opacity: 0; } }
   .ping-dot { animation: ping 1.2s cubic-bezier(0,0,0.2,1) infinite; }
+  
+  /* Notification styles */
+  .notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4ee6a8;
+    color: #0b1220;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    z-index: 50;
+    animation: slideIn 0.3s ease-out;
+  }
+  @keyframes slideIn {
+    from {
+      transform: translateX(400px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(400px);
+      opacity: 0;
+    }
+  }
+  .notification.hide {
+    animation: slideOut 0.3s ease-out forwards;
+  }
 </style>
 <script type="application/ld+json">
 {
@@ -96,9 +133,9 @@
       <a href="#Endorsement" class="text-muted hover:text-fg transition">Endorsement</a>
       <a href="#contact" class="text-muted hover:text-fg transition">Contact</a>
     </div>
-    <a href="mailto:rupalikirangedevops@gmail.com" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-lg border border-yellow-500/50 bg-yellow-500/10 px-5 py-3 text-sm font-semibold text-yellow-400 hover:border-yellow-500 hover:bg-yellow-500/20 transition">
+    <button onclick="copyEmail()" class="inline-flex items-center gap-2 rounded-lg border border-yellow-500/50 bg-yellow-500/10 px-5 py-3 text-sm font-semibold hover:border-yellow-500 hover:bg-yellow-500/20 transition" title="Copy email">
       💼 Hire Me
-    </a>
+    </button>
   </div>
 </nav>
 
@@ -115,7 +152,7 @@
           <span class="font-bold">Available for cloud & DevOps roles</span>
         </div>
         <p class="mt-6 max-w-xl text-lg text-muted md:text-xl">
-          Cloud Technology Lead with <span class="font-semibold text-fg">8 years</span> shipping AWS migrations, Kubernetes platforms, and CI/CD automation — now driving AI-powered DevOps with Claude Code Agents.
+          Cloud Technology Lead with <span class="font-bold text-fg">8 years</span> shipping AWS migrations, Kubernetes platforms, and CI/CD automation — now driving AI-powered DevOps with <span class="font-bold text-primary">Claude Code Agents</span>.
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
           <a href="https://www.linkedin.com/in/rupali-kirange" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-5 py-3 text-sm font-semibold hover:border-primary/60 hover:bg-surface2 transition">
@@ -266,7 +303,7 @@ ai-agents          80% effort saved
         📞 Call
       </a>
       <a href="https://wa.me/919356675807" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-6 py-3 text-sm font-semibold hover:border-primary/60 hover:bg-surface2 transition">
-        💬 WhatsApp
+        📱 WhatsApp
       </a>
     </div>
   </div>
@@ -280,6 +317,27 @@ ai-agents          80% effort saved
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  function copyEmail() {
+    const email = 'rupalikirangedevops@gmail.com';
+    navigator.clipboard.writeText(email).then(() => {
+      showNotification('Email copied to clipboard!');
+    }).catch(() => {
+      showNotification('Failed to copy email');
+    });
+  }
+
+  function showNotification(message) {
+    const notification = document.createElement('div');
+    notification.className = 'notification';
+    notification.textContent = message;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+      notification.classList.add('hide');
+      setTimeout(() => notification.remove(), 300);
+    }, 2000);
+  }
 
   const skills = [
     ['✨','Claude Code Agents · GenAI for DevOps'],
