@@ -130,6 +130,7 @@
       <a href="#skills" class="text-muted hover:text-fg transition">Skills</a>
       <a href="#contributions" class="text-muted hover:text-fg transition">Impact</a>
       <a href="#Certifications and Awards" class="text-muted hover:text-fg transition">Certifications and Awards</a>
+      <a href="#Patent" class="text-muted hover:text-fg transition">Patent</a>
       <a href="#Endorsement" class="text-muted hover:text-fg transition">Endorsement</a>
       <a href="#contact" class="text-muted hover:text-fg transition">Contact</a>
     </div>
@@ -262,6 +263,16 @@ ai-agents          80% effort saved
       <span class="font-mono text-xs text-primary">07 //</span>
       <h2 class="mt-2 text-3xl font-bold tracking-tight md:text-4xl">Awards</h2>
       <ul class="mt-8 space-y-3" id="awards-list"></ul>
+    </div>
+  </div>
+</section>
+
+<section id="Patent" class="border-t border-border/60">
+  <div class="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-2">
+    <div>
+      <span class="font-mono text-xs text-primary">06 //</span>
+      <h2 class="mt-2 text-3xl font-bold tracking-tight md:text-4xl">Patent</h2>
+      <ul class="mt-8 space-y-3" id="patent-list"></ul>
     </div>
   </div>
 </section>
@@ -450,6 +461,20 @@ ai-agents          80% effort saved
     "Appreciation for Quick Learning & Ownership",
   ];
   document.getElementById('awards-list').innerHTML = awards.map(a => `
+    <li class="flex items-start gap-3 rounded-lg border border-border bg-surface px-4 py-3 text-sm hover:border-primary/60 hover:bg-surface2 transition"><span class="mt-0.5 text-accent">🏆</span> ${a}</li>`).join('');
+
+  const patent = [
+    "Improved Smart Shopping Cart Using Client-Server
+    201721034485 · Issued Oct 13, 2017
+    This invention addresses the inefficiencies in supermarket checkout processes by introducing a smart shopping cart system based on a client-server architecture. Key features include:
+    • Interactive Buttons: Users can add or remove items, switch the cart on, and clear transactions using dedicated buttons.
+    • Unique Cart ID: A unique ID is generated at the server when the cart is activated, enabling secure tracking.
+    • Real-Time Billing: Items added or removed are instantly reflected on the cart’s scanner and the server, streamlining the billing process.
+    • Server-Side Payment: Final payment is processed at the billing counter, and the cart is reset for the next user.
+    • Technology Stack: Utilizes RFID for item identification and ZigBee for wireless communication, enhancing speed and transparency.
+    This system significantly reduces checkout time and improves user experience by automating and simplifying the shopping process A."
+  ];
+  document.getElementById('patent-list').innerHTML = patent.map(a => `
     <li class="flex items-start gap-3 rounded-lg border border-border bg-surface px-4 py-3 text-sm hover:border-primary/60 hover:bg-surface2 transition"><span class="mt-0.5 text-accent">🏆</span> ${a}</li>`).join('');
 
   const endorsements = [
