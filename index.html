@@ -133,7 +133,7 @@
       <a href="#Endorsement" class="text-muted hover:text-fg transition">Endorsement</a>
       <a href="#contact" class="text-muted hover:text-fg transition">Contact</a>
     </div>
-    <button onclick="copyEmail()" class="inline-flex items-center gap-2 rounded-lg border border-yellow-500/50 bg-yellow-500/10 px-5 py-3 text-sm font-semibold hover:border-yellow-500 hover:bg-yellow-500/20 transition" title="Copy email">
+    <button onclick="copyEmail()" class="inline-flex items-center gap-2 rounded-lg border border-yellow-500/50 bg-yellow-500/10 px-5 py-3 text-sm font-semibold hover:border-yellow-500 hover:bg-yellow-500/20 transition">
       💼 Hire Me
     </button>
   </div>
@@ -152,7 +152,7 @@
           <span class="font-bold">Available for cloud & DevOps roles</span>
         </div>
         <p class="mt-6 max-w-xl text-lg text-muted md:text-xl">
-          Cloud Technology Lead with <span class="font-bold text-fg">8 years</span> shipping AWS migrations, Kubernetes platforms, and CI/CD automation — now driving AI-powered DevOps with <span class="font-bold text-primary">Claude Code Agents</span>.
+          Cloud Technology Lead with <span class="font-bold text-fg">8 years</span> shipping AWS migrations, Kubernetes platforms, and CI/CD automation — now driving AI-powered DevOps with <span class="text-accent">Claude Code Agents</span>.
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
           <a href="https://www.linkedin.com/in/rupali-kirange" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-5 py-3 text-sm font-semibold hover:border-primary/60 hover:bg-surface2 transition">
@@ -297,9 +297,9 @@ ai-agents          80% effort saved
   <div class="mx-auto max-w-4xl px-6 py-24 text-center">
     <span class="font-mono text-xs text-primary">10 //</span>
     <h2 class="mt-2 text-3xl font-bold tracking-tight md:text-4xl">Let's build something reliable</h2>
-    <p class="mx-auto mt-6 max-w-xl text-muted"><span class="font-bold text-fg">Available for Cloud Lead, DevOps Architect, Platform Engineering and AI-driven automation roles.</span> Reach out for opportunities or collaboration.</p>
+    <p class="mx-auto mt-6 max-w-xl text-muted"><span class="font-bold text-fg">Available for Cloud Lead, DevOps Architect, Platform Engineering and AI-driven automation roles.</span> Reach out for freelance projects or full-time opportunities.</p>
     <div class="mt-8 flex flex-wrap justify-center gap-3">
-      <button onclick="copyEmail()" class="inline-flex items-center gap-2 rounded-lg border border-yellow-500/50 bg-yellow-500/10 px-6 py-3 text-sm font-semibold hover:border-yellow-500 hover:bg-yellow-500/20 transition" title="Copy email">
+      <button onclick="copyEmail()" class="inline-flex items-center gap-2 rounded-lg border border-yellow-500/50 bg-yellow-500/10 px-6 py-3 text-sm font-semibold hover:border-yellow-500 hover:bg-yellow-500/20 transition">
         💼 Hire Me
       </button>
       <a href="tel:+919356675807" class="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-6 py-3 text-sm font-semibold hover:border-primary/60 hover:bg-surface2 transition">
@@ -400,7 +400,7 @@ ai-agents          80% effort saved
           <p class="mt-1 text-sm text-primary">${j.company}</p>
           <p class="mt-0.5 text-sm text-muted">${j.project}</p>
         </div>
-        <span class="rounded-full border border-border bg-bg/60 px-3 py-1 font-mono text-xs text-muted">${j.period}</span>
+        <span class="rounded-full border border-border bg-bg/60 px-3 py-1 font-mono text-xs text-muted whitespace-nowrap">${j.period}</span>
       </div>
       <ul class="mt-5 space-y-2.5 text-sm leading-relaxed text-muted">
         ${j.points.map(p => `<li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-accent"></span><span>${p}</span></li>`).join('')}
@@ -440,7 +440,7 @@ ai-agents          80% effort saved
     "Terraform — KodeKloud",
   ];
   document.getElementById('cert-list').innerHTML = certs.map(c => `
-    <li class="flex items-center gap-3 rounded-lg border border-border bg-surface px-4 py-3 text-sm hover:border-primary/60 hover:bg-surface2 transition"><span class="text-primary">🎓</span>${c}</li>`).join('');
+    <li class="flex items-center gap-3 rounded-lg border border-border bg-surface px-4 py-3 text-sm hover:border-primary/60 hover:bg-surface2 transition"><span class="text-primary">🎓</span> ${c}</li>`).join('');
 
   const awards = [
     "AWS Infra Setup Excellence — Danske MHI squad",
@@ -450,7 +450,7 @@ ai-agents          80% effort saved
     "Appreciation for Quick Learning & Ownership",
   ];
   document.getElementById('awards-list').innerHTML = awards.map(a => `
-    <li class="flex items-start gap-3 rounded-lg border border-border bg-surface px-4 py-3 text-sm hover:border-primary/60 hover:bg-surface2 transition"><span class="mt-0.5 text-accent">🏆</span><span>${a}</span></li>`).join('');
+    <li class="flex items-start gap-3 rounded-lg border border-border bg-surface px-4 py-3 text-sm hover:border-primary/60 hover:bg-surface2 transition"><span class="mt-0.5 text-accent">🏆</span> ${a}</li>`).join('');
 
   const endorsements = [
     ["Rupali has strong cloud architecture skills, quickly troubleshoots complex issues, and fosters a collaborative team environment.","DevOps Engineer, Infosys"],
