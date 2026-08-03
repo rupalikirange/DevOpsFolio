@@ -129,7 +129,6 @@
       <a href="#ai" class="text-muted hover:text-fg transition">AI</a>
       <a href="#skills" class="text-muted hover:text-fg transition">Skills</a>
       <a href="#contributions" class="text-muted hover:text-fg transition">Impact</a>
-      <a href="#projects" class="text-muted hover:text-fg transition">Projects</a>
       <a href="#Certifications and Awards" class="text-muted hover:text-fg transition">Certifications and Awards</a>
       <a href="#Patent" class="text-muted hover:text-fg transition">Patent</a>
       <a href="#Endorsement" class="text-muted hover:text-fg transition">Endorsement</a>
@@ -159,6 +158,10 @@
         <div class="mt-8 flex flex-wrap gap-3">
           <a href="https://www.linkedin.com/in/rupali-kirange" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-5 py-3 text-sm font-semibold hover:border-primary/60 hover:bg-surface2 transition">
             💼 LinkedIn
+          </a>
+          <!-- Mobile-visible Projects button -->
+          <a href="#projects" class="inline-flex items-center gap-2 rounded-lg border border-primary/50 bg-primary/10 px-5 py-3 text-sm font-semibold hover:border-primary hover:bg-primary/20">
+            🚀 Projects
           </a>
         </div>
         <div class="mt-8 flex flex-wrap gap-6 text-sm text-muted">
@@ -252,21 +255,6 @@ ai-agents          80% effort saved
   </div>
 </section>
 
-<!-- Projects -->
-<section id="projects" class="border-t border-border/60">
-  <div class="mx-auto max-w-6xl px-6 py-20">
-    <span class="font-mono text-xs text-primary">06 //</span>
-    <h2 class="mt-2 text-3xl font-bold tracking-tight md:text-4xl">Projects</h2>
-    <div class="mt-10 grid gap-6 md:grid-cols-2" id="projects-grid">
-      <article class="rounded-xl border border-border bg-surface p-6 hover:border-primary/60 hover:bg-surface2 transition">
-        <h3 class="text-lg font-semibold">Cloud Migration & DevOps Automation</h3>
-        <p class="mt-2 text-sm text-muted">Built a Node.js application containerized with Docker; provisioned infrastructure using Terraform for both KIND (local Kubernetes) and AWS EKS deployments; designed Kubernetes manifests (Deployment, Service, Ingress, NodePort) to expose and secure the application; implemented a secured CI/CD pipeline (ci.yml) with GitHub Actions for code scanning, build, and deployment; integrated AI-powered security scanning (Semgrep) for static code analysis and quality checks; configured a self-hosted GitHub Actions runner to execute builds and deployments in a controlled environment. Automated workflow: Code is scanned → app is built → deployed locally or on AWS.</p>
-        <p class="mt-4 text-sm"><a href="https://github.com/rupalikirange/Cloud-Migration" target="_blank" rel="noreferrer" class="text-primary font-medium">Repository: github.com/rupalikirange/Cloud-Migration</a></p>
-      </article>
-    </div>
-  </div>
-</section>
-
 <!-- Certs + Awards -->
 <section id="Certifications and Awards" class="border-t border-border/60">
   <div class="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-2">
@@ -324,15 +312,15 @@ ai-agents          80% effort saved
   <div class="mx-auto max-w-4xl px-6 py-24 text-center">
     <span class="font-mono text-xs text-primary">10 //</span>
     <h2 class="mt-2 text-3xl font-bold tracking-tight md:text-4xl">Let's build something reliable</h2>
-    <p class="mx-auto mt-6 max-w-xl text-muted"><span class="font-bold text-fg">Available for Cloud Lead, DevOps Architect, Platform Engineering and AI-driven automation roles.</span> Reach out for freelance, contract or full-time opportunities.</p>
+    <p class="mx-auto mt-6 max-w-xl text-muted"><span class="font-bold text-fg">Available for Cloud Lead, DevOps Architect, Platform Engineering and AI-driven automation roles.</span> Reach out for fr[...]
     <div class="mt-8 flex flex-wrap justify-center gap-3">
-      <button onclick="copyEmail()" class="inline-flex items-center gap-2 rounded-lg border border-yellow-500/50 bg-yellow-500/10 px-6 py-3 text-sm font-semibold hover:border-yellow-500 hover:bg-yellow-500/20">
+      <button onclick="copyEmail()" class="inline-flex items-center gap-2 rounded-lg border border-yellow-500/50 bg-yellow-500/10 px-6 py-3 text-sm font-semibold hover:border-yellow-500 hover:bg-yello[...]
         💼 Hire Me
       </button>
-      <a href="tel:+919356675807" class="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-6 py-3 text-sm font-semibold hover:border-primary/60 hover:bg-surface2 transition">
+      <a href="tel:+919356675807" class="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-6 py-3 text-sm font-semibold hover:border-primary/60 hover:bg-surface2 transi[...]
         📞 Call
       </a>
-      <a href="https://wa.me/919356675807" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-6 py-3 text-sm font-semibold hover:border-primary/60 hover:bg-surface2 transition">
+      <a href="https://wa.me/919356675807" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-6 py-3 text-sm font-semibold hover:borde[...]
         📱 WhatsApp
       </a>
     </div>
@@ -457,7 +445,7 @@ ai-agents          80% effort saved
     "Bank cloud infrastructure setup per security standards and governance.",
   ];
   document.getElementById('contrib-grid').innerHTML = contribs.map(i => `
-    <div class="rounded-xl border border-border bg-surface p-5 text-sm hover:border-primary/60 hover:bg-surface2 transition"><span class="font-mono text-xs text-primary">→</span> ${i}</div>`).join('');
+    <div class="rounded-xl border border-border bg-surface p-5 text-sm hover:border-primary/60 hover:bg-surface2 transition"><span class="font-mono text-xs text-primary">→</span> ${i}</div>`).join('[...]
 
   const certs = [
     "AWS Cloud Practitioner",
@@ -467,7 +455,7 @@ ai-agents          80% effort saved
     "Terraform — KodeKloud",
   ];
   document.getElementById('cert-list').innerHTML = certs.map(c => `
-    <li class="flex items-center gap-3 rounded-lg border border-border bg-surface px-4 py-3 text-sm hover:border-primary/60 hover:bg-surface2 transition"><span class="text-primary">🎓</span> ${c}</li>`).join('');
+    <li class="flex items-center gap-3 rounded-lg border border-border bg-surface px-4 py-3 text-sm hover:border-primary/60 hover:bg-surface2 transition"><span class="text-primary">🎓</span> ${c}</l[...]
 
   const awards = [
     "AWS Infra Setup Excellence — Danske MHI squad",
@@ -477,7 +465,7 @@ ai-agents          80% effort saved
     "Appreciation for Quick Learning & Ownership",
   ];
   document.getElementById('awards-list').innerHTML = awards.map(a => `
-    <li class="flex items-start gap-3 rounded-lg border border-border bg-surface px-4 py-3 text-sm hover:border-primary/60 hover:bg-surface2 transition"><span class="mt-0.5 text-accent">🏆</span> ${a}</li>`).join('');
+    <li class="flex items-start gap-3 rounded-lg border border-border bg-surface px-4 py-3 text-sm hover:border-primary/60 hover:bg-surface2 transition"><span class="mt-0.5 text-accent">🏆</span> ${[...]
 
   const patent = [
   `Improved Smart Shopping Cart Using Client-Server
